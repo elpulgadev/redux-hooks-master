@@ -1,4 +1,4 @@
-import { SET_FIRST_NAME, SET_LAST_NAME, SET_AGE } from "../types";
+import { SET_FIRST_NAME, SET_LAST_NAME, SET_AGE, SET_COUNT } from "../types";
 
 export const updateFirstName = (firstName) => (dispatch, getState) => {
   try {
@@ -38,6 +38,19 @@ export const updateAge = (age) => (dispatch) => {
       type: SET_AGE,
       payload: {
         age,
+      },
+    });
+  } catch (error) {
+    console.log("Error", error);
+  }
+};
+
+export const updateCount = (count) => (dispatch) => {
+  try {
+    dispatch({
+      type: SET_COUNT,
+      payload: {
+        count,
       },
     });
   } catch (error) {

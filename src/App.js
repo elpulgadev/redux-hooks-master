@@ -1,11 +1,14 @@
 import React from "react";
 
-import { Form, AgeBtn } from "./components";
+// import { Form, AgeBtn } from "./components";
+import UseDispatch from "./components/UseDispatch";
+
 
 const App = () => {
   return <>
-    <Form />
-    <AgeBtn />
+    <UseDispatch />
+    {/* <Form /> */}
+    {/* <AgeBtn /> */}
   </>;
 };
 
